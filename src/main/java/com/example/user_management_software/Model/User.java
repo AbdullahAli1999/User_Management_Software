@@ -20,7 +20,7 @@ public class User {
     @NotEmpty(message = "Cannot be null")
     @Size(min = 4,message = "Length more than4")
     private String name;
-    @Column(columnDefinition = "varchar(30) not null")
+    @Column(columnDefinition = "varchar(30) not null unique")
     @NotEmpty(message = "Cannot be null")
     @Size(min = 4,message = "Length more than4")
     private String username;
